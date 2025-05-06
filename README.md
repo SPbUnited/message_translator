@@ -3,10 +3,6 @@
 ## Installation
 
 ```bash
-cd ssl_packet_package
-make init
-make build
-cd ..
 make init
 ```
 
