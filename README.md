@@ -25,10 +25,13 @@ It binds zmq adress: `ipc:///tmp/united.robot_control::SUB`
 ```python
 from ssl_packet_package.protopy.spbunited.robot import control_pb2 as rcpb
 import zmq
+import time
 
 context = zmq.Context()
 socket = context.socket(zmq.PUB)
 socket.connect("ipc:///tmp/united.robot_control")
+
+time.sleep(1)
 
 robot_command = rcpb.RobotCommand(
     robot_id=1,
