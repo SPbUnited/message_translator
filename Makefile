@@ -55,10 +55,10 @@ init_py:
 
 init_submodule:
 	git submodule update --init --recursive
-	cd ssl_packet_package; make init; cd ..
+# 	cd ssl_packet_package; make init; cd ..
 
-build:
-	cd ssl_packet_package; make build; cd ..
+# build:
+# 	cd ssl_packet_package; make build; cd ..
 
 up: up-message
 	python3 main.py
