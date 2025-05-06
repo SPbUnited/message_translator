@@ -4,6 +4,8 @@
 
 ```bash
 make init
+source venv/bin/activate
+make build
 ```
 
 ## Usage
