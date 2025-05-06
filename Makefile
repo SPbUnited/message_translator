@@ -42,7 +42,7 @@ BIRED=\033[1;91m
 
 NC=\033[0m # No Color
 
-init: init_py
+init: init_py init_submodule
 	@echo "\n${YELLOW}Don't forget to do ${WHITE}source venv/bin/activate${NC}"
 	@echo "                   ~~~~~~~~~~~~~~~~~~~~~~~~"
 
