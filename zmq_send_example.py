@@ -62,11 +62,20 @@ global_coordinates_robot_command = rcpb.RobotCommand(
     global_coordinates=rcpb.GlobalCoordinates(x=1, y=2, angle=3),
 )
 
+cap_vel_and_accel_robot_command = rcpb.RobotCommand(
+    robot_id=1,
+    cap_vel_and_accel=rcpb.CapVelAndAccel(
+        max_vel=1,
+        max_accel=2,
+    ),
+)
+
 for robot_command in [
     old_format_robot_command,
     speed_control_robot_command,
     coordinate_control_robot_command,
     kicker_and_dribbler_robot_command,
     global_coordinates_robot_command,
+    cap_vel_and_accel_robot_command,
 ]:
     socket.send(robot_command.SerializeToString())

@@ -5,6 +5,7 @@ from .kicker_and_dribbler import KickerAndDribbler
 from .speed_control import SpeedControl
 from .coordinate_control import CoordinateControl
 from .global_coordinate import GlobalCoordinates
+from .cap_vel_and_accel import CapVelAndAccel
 import bitstruct.c as bs
 
 MESSAGE_MAP = {
@@ -13,6 +14,7 @@ MESSAGE_MAP = {
     "speed_control": SpeedControl,
     "coordinate_control": CoordinateControl,
     "global_coordinates": GlobalCoordinates,
+    "cap_vel_and_accel": CapVelAndAccel,
 }
 
 
